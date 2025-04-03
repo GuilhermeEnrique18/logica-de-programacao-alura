@@ -1,5 +1,5 @@
 alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = parseInt(Math.random() * 3) + 1;
+let numeroSecreto = parseInt(Math.random() * 10) + 1;
 console.log(numeroSecreto);
 let chute = null;
 let tentativas = 1;
@@ -18,17 +18,8 @@ while (chute != numeroSecreto) {
         }
         //tentativas  = tentativas + 1;
         tentativas++;
-
     }
 }
-
-//OPERADOR TERNÁRIO - Interrogação funciona como "Caso". O que for colocado na sequência será realizado caso tentativas seja maior do que um. Nesse caso, se tentativas for maior do que um, será utilizada a palavra "tentativas" (plural). Se tentativas não maior que um, usar dois-pontos (:) e utilizar a palavra "tentativa" (singular). 
+//OPERADOR TERNÁRIO
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
 alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`);
-
-/*if (tentativas > 1){
-   
-}else{
-    alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa`);
-}
-*/
